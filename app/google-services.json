@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "967152120187",
+    "firebase_url": "https://andrologger-fe931.firebaseio.com",
+    "project_id": "andrologger-fe931",
+    "storage_bucket": "andrologger-fe931.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967152120187:android:784f174a6558482b19cdde",
+        "android_client_info": {
+          "package_name": "com.github.midros.istheap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967152120187-ehljtthmadianv00vegdmp9vg4ug2vnj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.github.midros.istheap",
+            "certificate_hash": "307eda4dc6c07ba9bdcb47065dade60aa404e51a"
+          }
+        },
+        {
+          "client_id": "967152120187-5b12bfj3gm4ousaqhha6sbdf6j8fvkpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGoMh2yr5xrSO9iL_0xBFzn4bnQWJNwBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967152120187-5b12bfj3gm4ousaqhha6sbdf6j8fvkpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

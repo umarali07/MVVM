@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/btnIgnoringBatteryOptimizations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:padding="12dp"
+                android:text="Ignore Battery Optimizations"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnAutoStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:padding="12dp"
+                android:text="Enable Auto Start"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="hideNotification"
+                android:padding="12dp"
+                android:text="@string/notification_settings"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="notificationSettings"
+                android:padding="12dp"
+                android:text="@string/overlay_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="storagePermissionClick"
+                android:padding="12dp"
+                android:text="@string/storage_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="readSMSPermission"
+                android:padding="12dp"
+                android:text="@string/read_sms_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="readCallPermission"
+                android:padding="12dp"
+                android:text="@string/read_calls_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="screenShortPermission"
+                android:padding="12dp"
+                android:text="@string/screenshot_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="recordAudioPermission"
+                android:padding="12dp"
+                android:text="@string/record_audio_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="readCallStatePermission"
+                android:padding="12dp"
+                android:text="@string/read_call_logs_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="readContactPermission"
+                android:padding="12dp"
+                android:text="@string/read_contact_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="outgoingCallsPermission"
+                android:padding="12dp"
+                android:text="@string/outgoing_call_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="locationxPermission"
+                android:padding="12dp"
+                android:text="@string/location_permission"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_scondary"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:onClick="OnServicePermission"
+                android:padding="12dp"
+                android:text="@string/accessibility_service"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:onClick="nextActivity"
+        android:text="@string/proceed"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
